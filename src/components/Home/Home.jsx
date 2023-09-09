@@ -8,7 +8,9 @@ const Home = () => {
     const tShirts=useLoaderData()
   const [cart,setCart]=useState([])
     const hundleAddtocart=tshirt=>{
-        console.log(tshirt);
+        const newCart=[...cart,tshirt];
+        setCart(newCart);
+        
     }
     return (
         <div className='home-container'>
@@ -24,7 +26,7 @@ const Home = () => {
            </div>
          
            <div className='cart'>
-            <OrderSummary></OrderSummary>
+            <OrderSummary cart={cart}></OrderSummary>
            </div>
         </div>
     );
