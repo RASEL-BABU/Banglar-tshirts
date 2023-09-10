@@ -2,7 +2,7 @@ import React from 'react';
 import './Tshirt.css'
 
 const Tshirt = ({tshirt,hundleAddtocart}) => {
-    console.log(tshirt);
+    
     const { picture,name,price}=tshirt;
     return (
         <div className='tshirt'>
