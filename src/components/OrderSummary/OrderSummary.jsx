@@ -11,7 +11,7 @@ const OrderSummary = ({cart, hundleRemovefromCart}) => {
                 key={tshirt._id}>
                     {tshirt.name}
             
-                <button onClick={()=>hundleRemovefromCart(tshirt._id)} >del</button></p>)
+                <button className='button' onClick={()=>hundleRemovefromCart(tshirt._id)} >delete</button></p>)
             }
         </div>
     );
